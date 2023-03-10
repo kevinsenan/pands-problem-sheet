@@ -30,5 +30,6 @@ while (num_of_x > 1):
     to_append += insert
     num_of_x -= 1
 
+#concatenate the required X to the last four of the account number
 obfuscated2 = to_append + last_four  
 print(obfuscated2)
