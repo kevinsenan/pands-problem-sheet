@@ -6,7 +6,7 @@
 account_number = input("Please enter 10 digit account number:")
 
 #get the numbers from 7 to 10
-last_four = (account_number[6:10])
+last_four = (account_number[-4:])
 
 #put 6 X into variable x_string
 x_string = 'XXXXXX'
@@ -26,10 +26,9 @@ num_of_x = length_of_acc_num - 4
 insert = 'X'
 to_append = 'X'
 
-while num_of_x <= length_of_acc_num:
+while (num_of_x > 1):
     to_append += insert
-    length_of_acc_num -= 1
-    #num_of_x -= 1
+    num_of_x -= 1
 
 obfuscated2 = to_append + last_four  
 print(obfuscated2)
